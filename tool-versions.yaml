@@ -1,0 +1,5 @@
+# tool-versions.yaml
+# Pinned versions for security and analysis tools installed by OpsCore.
+# Managed by OpsCore admins — bumping a version here applies to all pipelines on next run.
+
+sonarqube_scanner: 6.2.1.4610   # sonar-scanner-cli version (linux-x64)
