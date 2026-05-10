@@ -1,0 +1,17 @@
+# security-policy.yaml
+# Security scanner policies enforced at platform level.
+# Managed by OpsCore admins — developers cannot override these from action.yaml.
+
+trivy:
+  severity: CRITICAL,HIGH      # comma-separated Trivy severity levels
+  soft_fail: false             # false = fail the job on findings; true = warn only
+  upload_sarif: true           # upload results to GitHub Security tab (requires Advanced Security)
+
+checkov:
+  soft_fail: false
+  upload_sarif: false          # disabled: requires GitHub Advanced Security on private repos
+
+semgrep:
+  default_config: auto         # semgrep --config value when not specified in action.yaml
+  soft_fail: false
+  upload_sarif: false          # disabled: requires GitHub Advanced Security on private repos
