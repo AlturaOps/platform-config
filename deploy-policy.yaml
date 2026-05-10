@@ -1,0 +1,24 @@
+# deploy-policy.yaml
+# Who can approve deploys, per OpsCore project type.
+# Managed by OpsCore admins — developers cannot override this from action.yaml.
+#
+# Fields per type:
+#   teams:          GitHub team slugs. Used when ORG_READ_TOKEN is available (read:org scope).
+#   users:          Individual GitHub usernames authorized regardless of team membership.
+#   min_permission: Fallback repo collaborator permission when ORG_READ_TOKEN is absent.
+#                   Values: admin | maintain | write | read | none
+
+terraform:
+  teams: [platform-engineers]
+  users: []
+  min_permission: maintain
+
+infra:
+  teams: [platform-engineers]
+  users: []
+  min_permission: maintain
+
+deploy:
+  teams: [platform-engineers]
+  users: []
+  min_permission: maintain
