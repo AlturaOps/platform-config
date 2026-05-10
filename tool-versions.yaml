@@ -2,7 +2,8 @@
 # Pinned versions for security and analysis tools installed by OpsCore.
 # Managed by OpsCore admins — bumping a version here applies to all pipelines on next run.
 
-sonarqube_scanner: 6.2.1.4610   # sonar-scanner-cli version (linux-x64)
+sonarqube_scanner: 6.2.1.4610   # https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/
 trivy: 0.70.0                    # https://github.com/aquasecurity/trivy/releases
 checkov: 3.2.527                 # https://github.com/bridgecrewio/checkov/releases
 semgrep: 1.162.0                 # https://github.com/semgrep/semgrep/releases
+terragrunt: 0.68.1               # https://github.com/gruntwork-io/terragrunt/releases
